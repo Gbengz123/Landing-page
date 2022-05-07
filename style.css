@@ -2,6 +2,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -47,7 +48,7 @@ body {
     color: whitesmoke;
 }
 
-.header .section {
+.header .center {
     display: flex;
     align-items: center;
     margin: auto 0;
@@ -79,7 +80,8 @@ body {
 }
 
 .header .main-section .left {
-    flex: 1 50%;
+    flex: 1 1 100%;
+    padding: 30px;
 }
 
 .header .main-section .right {
@@ -87,7 +89,140 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
-    flex: 1 50%;
+    flex: 1 1 100%;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainsection-1 .container {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+}
+
+.mainsection-1 .top {
+    text-align: center;
+    padding: 40px;
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.mainsection-1 .bottom{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainsection-1 .bottom .section {
+    width: 150px;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(102, 102, 102);
+}
+
+.mainsection-1 .image-container {
+    height: 150px;
+    border: #3882f6 solid 5px;
+    border-radius: 20px;
+    flex: 0 1 150px;
+}
+
+.mainsection-2 { 
+    background-color: #e5e7eb;
+}
+
+.mainsection-2 .container {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainsection-2 .section {
+    display: flex;
+    flex-direction: column;
+    color: #1f2937;
+    width: 70%;
+}
+
+.mainsection-2 #quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 0;
+}
+
+.mainsection-2 #author {
+    align-self: flex-end;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.mainsection-3 {
+    background-color: white;
+}
+
+.mainsection-3 .container {
+    display: flex;
+    height: 450px;
+}
+
+.mainsection-3 .prompt {
+    background-color: #3882f6;
+    border-radius: 5px;
+    color: #e5e7eb;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.mainsection-3 .left {
+    flex: 1 1 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainsection-3 h4 {
+    margin: 0;
+    font-size: 21px;
+}
+
+.mainsection-3 .right {
+    flex: 1 1 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainsection-3 button  {
+    text-align: center;
+    background-color: #3882f6;
+    border-radius: 10px;
+    color: #f9faf8;
+    border: 2px solid white;  
+    padding: 8px 24px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #1f2937;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: #e5e7eb;
+}
+
+@media only screen and (max-width: 914px){
+    .mainsection-1 .container{
+        height: auto;
+    }
+}
